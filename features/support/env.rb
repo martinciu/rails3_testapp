@@ -59,3 +59,6 @@ end
 
 require 'email_spec/cucumber'
 
+require "#{Rails.root}/spec/blueprints" # or wherever they live
+Before { Sham.reset } # reset Shams in between scenarios
+

@@ -47,4 +47,5 @@ group :cucumber do
   gem 'spork'
   gem 'launchy'    # So you can do Then show me the page
   gem 'email_spec', :git=>'git://github.com/bmabey/email-spec.git', :branch=>'rails3'
+  gem 'pickle', :git => "git://github.com/codegram/pickle.git"
 end

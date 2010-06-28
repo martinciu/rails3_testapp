@@ -47,3 +47,11 @@ Feature: Manage pages
       |title 1|body 1|
       |title 2|body 2|
       |title 4|body 4|
+  
+  Scenario: Creating page
+    Given a page exists with title: "My Post", body: "My body"
+    When I go to the pages page
+    Then I should see "My Post"
+  
+  
+  
