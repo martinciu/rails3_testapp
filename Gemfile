@@ -37,3 +37,14 @@ group :test do
   # gem 'email_spec',       :git => "git://github.com/bmabey/email-spec.git", :branch=>'rails3'
   # gem 'database_cleaner'
 end
+
+group :cucumber do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'rspec-rails'
+  gem 'spork'
+  gem 'launchy'    # So you can do Then show me the page
+  gem 'email_spec', :git=>'git://github.com/bmabey/email-spec.git', :branch=>'rails3'
+end
