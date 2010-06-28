@@ -1,4 +1,4 @@
-require 'machinist/active_record'
+require 'machinist/mongoid'
 require 'sham'
 require 'faker'
 

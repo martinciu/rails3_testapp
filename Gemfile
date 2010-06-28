@@ -7,7 +7,9 @@ gem 'rails', '3.0.0.beta4'
 
 gem 'haml'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+# gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'mongoid', '2.0.0.beta7'
+gem 'bson_ext', '1.0.1'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -30,6 +32,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 group :test do
   gem "rspec-rails",      ">= 2.0.0.beta.14"
   gem "machinist"
+  gem 'machinist_mongo',  '2.0.0.pre',    :require => 'machinist/mongoid'
   gem "faker"
   gem 'email_spec', :git=>'git://github.com/bmabey/email-spec.git', :branch=>'rails3'
   
