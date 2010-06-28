@@ -1,5 +1,7 @@
 Given /^the following pages:$/ do |pages|
-  Page.create!(pages.hashes)
+  pages.hashes.each do |hash|
+    Page.create!(hash)
+  end
 end
 
 When /^I delete the (\d+)(?:st|nd|rd|th) page$/ do |pos|
